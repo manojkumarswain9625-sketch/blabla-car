@@ -1,0 +1,743 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+body:has(#main:sticky) #navbar {
+    padding-bottom: 90px; /* space for merged search bar */
+}
+
+#navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    transition: padding-bottom 0.3s ease;
+    position: sticky;
+    top: 0;                 /* stick to top */
+    z-index: 1000;          /* stay above image & content */
+    background-color: white; /* REQUIRED */
+}
+
+
+
+#icon
+{
+    height: 100px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#khaali
+{
+    height: 100px;
+    width: 50%;
+}
+
+#three_in_one
+{
+    height: 100px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#search_icon
+{
+    height: 80px;
+    width: 5%;
+    color: #00aff5;
+    margin-top: 10px;
+}
+
+#search
+{
+    height: 80px;
+    width: 20%;
+    color: #00aff5;
+    margin-top: 10px;
+    font-size: 100%;
+    font-family: gt-eesti, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#plus_icon
+{
+    height: 80px;
+    width: 5%;
+    color: #00aff5;
+    margin-top: 10px;
+}
+
+#plus
+{
+    height: 80px;
+    width: 30%;
+    color: #00aff5;
+    margin-top: 10px;
+    font-size: 100%;
+    font-family: gt-eesti, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#profile
+{
+    height: 80px;
+    width: 15%;
+}
+
+#profile_icon
+{
+    height: 80px;
+    width: 5%;
+    color: #00aff5;
+    margin-top: 10px;
+}
+
+#background_car {
+    height: 540px;
+    width: 100%;
+    position: absolute;
+    top: 100px; /* starts BELOW navbar */
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(rgba(1, 121, 163, .64) 0%, rgba(5, 71, 82, 0) 100%);
+    content: "";
+    inset: 0;
+    box-sizing: border-box;
+}
+
+
+#write {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 56px;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+
+/* main wrapper (floating over hero image) */
+#main {
+    position: sticky;
+    top: 100px;        /* sticks just under navbar */
+    margin-top: 420px; /* starts inside hero image */
+    z-index: 999;
+}
+
+
+/* search bar container */
+#main2 {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 999px;
+    height: 72px;
+    padding: 0 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+/* icons */
+#main2 i {
+    color: #00aff5;
+    font-size: 18px;
+    margin: 0 10px;
+    min-width: 18px;
+}
+
+/* text inputs */
+#main2 input {
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-size: 16px;
+    width: 170px;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Today & Passenger text */
+#today,
+#passenger {
+    font-size: 16px;
+    color: #333;
+    padding: 0 16px;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 20%;
+}
+
+/* vertical dividers */
+#main2 i:not(:last-child) {
+    border-right: 1px solid #e6e6e6;
+    padding-right: 12px;
+}
+
+/* search button */
+#search2 {
+    background: #00aff5;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* hover effects */
+#search2:hover {
+    background: #0099db;
+}
+
+#main2 input::placeholder {
+    color: #777;
+}
+
+#content,
+#container,
+#poster,
+#box,
+#travle,
+#information {
+    position: relative;
+    top: 0;          
+    margin-top: 80px;
+}
+
+#content
+{
+    height: 250px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#low_price
+{
+    height: 250px;
+    width: 30%;
+   
+}
+
+#icon2
+{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    background-color: #e2e2e2;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+#first_heading
+{
+    height: 60px;
+    width: 70%;
+}
+
+#first_para
+{
+    height: 300px;
+    width: 80%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 20px;
+    text-size-adjust: 100%;
+}
+
+#trust
+{
+    height: 250px;
+    width: 30%;
+    padding-left: 10px;
+}
+
+#icon3
+{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    background-color: #e2e2e2;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+#second_heading
+{
+    height: 60px;
+    width: 70%;
+}
+
+#second_para
+{
+    height: 300px;
+    width: 80%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 20px;
+    text-size-adjust: 100%;
+}
+
+#electric
+{
+    height: 250px;
+    width: 30%;
+    padding-left: 10px;
+}
+
+#icon4
+{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    background-color: #e2e2e2;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+#thired_heading
+{
+    height: 60px;
+    width: 70%;
+}
+
+#thired_para
+{
+    height: 300px;
+    width: 80%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 20px;
+    text-size-adjust: 100%;
+}
+
+#container
+{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+#container2
+{
+    width: 70%;
+    height: 230px;
+    background-color: #054652;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading
+{
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 250%;
+   color: #fff;
+   margin-left: 20%;
+   margin-top: 10px;
+}
+
+#para
+{
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#signin
+{
+    height: 40px;
+    width: 15%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    color: #00aff5;
+    margin-left: 40%;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#signin:hover
+{
+    cursor: pointer;
+}
+
+#poster
+{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+   
+}
+
+#poster1
+{
+    height: 300px;
+    width: 40%;
+}
+
+#help
+{
+    height: 200px;
+    width: 40%;
+    
+}
+
+#help1
+{
+    font-size: 200%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #054652;
+}
+
+#help2
+{
+    font-size: 130%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #054652;
+    margin-top: 20px;
+}
+
+#learn
+{
+     height: 40px;
+    width: 17%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #00aff5;
+    margin-left: 40%;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#box
+{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    background-color: #054652;
+}
+
+#box_in
+{
+    width: 80%;
+    height: 250px;
+}
+
+#where
+{
+    color: #fff;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 40px;
+}
+
+#location
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#location1
+{
+    height: 80px;
+    width: 30%;
+    background-color: white;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: #054652;
+    margin-right: 30px;
+}
+
+#fa_fa1
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#fa_fa2
+{
+    margin-left: 50px;
+}
+
+#location2
+{
+    height: 80px;
+    width: 30%;
+    background-color: white;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: #054652;
+}
+
+#location3
+{
+    height: 80px;
+    width: 30%;
+    background-color: white;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: #054652;
+    margin-left: 30px;
+}
+
+#popular
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: baseline;
+    font: inherit;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    color: rgb(0, 175, 245);
+    cursor: pointer;
+    text-size-adjust: 100%;
+    margin-left: 82%;
+}
+
+#information
+{
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+
+#carpool
+{
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;   
+    font-size: 300%;
+    margin-left: 450px;
+}
+
+#information1
+{
+    height: 550px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#information2
+{
+    height: 500px;
+    width: 40%;
+    margin-right: 5px;
+}
+
+#information3
+{
+    height: 500px;
+    width: 40%;
+    margin-left: 5px;
+}
+
+#information4
+{
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    border-bottom-color: black;
+}
+
+#carpool_ride
+{
+    font-size: 130%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#mobile_app
+{
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#read
+{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#read_more
+{
+    height: 50px;
+    width: 15%;
+    text-align: center;
+    background-color: #00aff5;
+    cursor: pointer;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 100%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#travel
+{
+    height: 400px;
+    width: 100%;
+    background-color: #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+#travel1
+{
+    height: 350px;
+    width: 30%;
+    padding: 15px;
+}
+
+#travel2
+{
+    height: 350px;
+    width: 30%;
+    padding: 15px;
+}
+
+#travel3
+{
+    height: 350px;
+    width: 30%;
+    padding: 15px;
+}
+
+#something
+{
+    margin-top: 10px;
+    font-size: 130%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+#something1,
+#something:hover
+{
+    transition: 0s;
+    color: #0099db;
+}
+
+#something1
+{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 70px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 70%;
+    height: 50px;
+    font-size: 120%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    align-items: center;
+    cursor: pointer;
+}
+
+#something2
+{
+    height: 60px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#condition
+{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Terms
+{
+    height: 80px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Terms1
+{
+    text-align: center;
+    font-size: 120%;
+    font-family: "gt-eesti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 10px;
+}
